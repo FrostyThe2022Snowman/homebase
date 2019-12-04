@@ -1,8 +1,57 @@
-<html>
-<head>
-<title> Home Base </title>
-</head>
-<body>
-  <p>Test </p>
-</body> 
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="??????" content = "Woah, you found me! Wow, I'm kinda surprised...especially with all the, you know, puzzles out there? Well anyway, here's your password, I guess you deserve it!">
+    <meta name="password" content = "Your password is bXie561m3P0i4 ... but for what??">
+    <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no"/>
+    <title>Onwards!</title>
+
+
+  </head>
+  <body>
+    <h1 class = "body"> Authentication </h1>
+    <div class = "body">
+    <div id = "field">
+
+    </div>
+    <div class = "lol" id = "field">
+      <label> Password: </label>
+    <input type = "text" id = "password">
+    </div>
+
+    <button id = "btn" type="submit" name="action">
+    Submit
+
+    </button>
+    <label id = "error">Ree </label>
+      <a id = "secret" style = "visibility: hidden;" href = "password.html"> I can smell the end! </a>
+    </div>
+    <script>
+      document.getElementById("btn").addEventListener("click", submit);
+      //Ooo sneaky, you've found a hidden clue! go to tiny.cc/clooos for some extra help :)
+      function submit(){
+
+        if(document.getElementById("password").value == 'bXie561m3P0i4')
+        {
+          document.getElementById("error").innerHTML = "Access granted!";
+
+          document.getElementById("secret").style.visibility = "visible";
+
+
+        }
+
+
+
+
+
+
+        }
+    </script>
+
+
+
+
+
+  </body>
 </html>
