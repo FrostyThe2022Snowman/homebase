@@ -29,6 +29,7 @@
     </div>
     <script>
       document.getElementById("btn").addEventListener("click", submit);
+      var counter = 0; 
       //Ooo sneaky, you've found a hidden clue! go to tiny.cc/clooos for some extra help :)
       function submit(){
 
@@ -39,6 +40,15 @@
           document.getElementById("secret").style.visibility = "visible";
 
 
+        }
+        else if(counter > 3)
+        {
+          document.getElementById("error").innerHTML = "Wow, you're really bad at this...I guess we're gonna have to try something else";
+        }
+        else
+        {
+          counter = counter + 1; 
+          document.getElementById("error").innerHTML = "Nope, that's not it, chief."
         }
 
 
