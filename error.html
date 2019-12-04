@@ -1,0 +1,23 @@
+<html>
+<head>
+  </head>
+
+<body onload = run()>
+  <button id = "btn"> Press me to stop! </button>
+  <p id = "wee"> You messed up! </p>
+
+  <script>
+    //document.getElementById("btn").addEventListener("click",
+    function run(){
+      document.getElementById("wee").innerHTML = document.getElementById("wee").innerHTML + " You messed up! ";
+      setTimeout(run, 1);
+
+
+
+    }
+
+  </script>
+
+  </body>
+
+</html>
