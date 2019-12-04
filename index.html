@@ -6,14 +6,14 @@
     <meta name="password" content = "Your password is bXie561m3P0i4 ... but for what??">
     <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no"/>
     <title>Onwards!</title>
-    
-    
+
+
   </head>
   <body>
     <h1 class = "body"> Authentication </h1>
     <div class = "body">
     <div id = "field">
-    
+
     </div>
     <div class = "lol" id = "field">
       <label> Password: </label>
@@ -25,23 +25,24 @@
 
     </button>
     <label id = "error">Ree </label>
-      <a id = "secret" style = "visibility: hidden;" href = "password.html"> I can smell the end! </a> 
+      <a id = "secret" style = "visibility: hidden;" href = "password.html"> I can smell the end! </a>
     </div>
     <script>
       document.getElementById("btn").addEventListener("click", submit);
       //Ooo sneaky, you've found a hidden clue! go to tiny.cc/clooos for some extra help :)
       function submit(){
-        console.log(document.getElementById("username").value);
-        if(document.getElementById("password").value == "bXie561m3P0i4")
+
+        if(document.getElementById("password").value == 'bXie561m3P0i4')
         {
-          document.getElementById("error").innerHTML = "Access granted! 
-          document.getElementById("secret").style.visiblity = "visible";
-          
-          
+          document.getElementById("error").innerHTML = "Access granted!";
+
+          document.getElementById("secret").style.visibility = "visible";
+
+
         }
-        document.getElementById("error").innerHTML = document.getElementById("password").value;
-        
-        
+
+
+
 
 
 
