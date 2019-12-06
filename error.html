@@ -7,7 +7,13 @@
   <p id = "wee"> You messed up! </p>
 
   <script>
-    //document.getElementById("btn").addEventListener("click",
+    document.getElementById("btn").addEventListener("click", faulty);
+    
+    function faulty() {
+      window.alert("This button is faulty");
+      faulty();
+      
+    }
     function run(){
       document.getElementById("wee").innerHTML = document.getElementById("wee").innerHTML + " You messed up! ";
       setTimeout(run, 1);
