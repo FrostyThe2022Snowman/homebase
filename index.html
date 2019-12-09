@@ -29,8 +29,10 @@
 
     </button>
     <label id = "error">No detected input</label>
+      <label id = "error2"> </label>
       <p> <i> Note: No CSS was harmed in the making of this page</i></p>
       <a id = "secret" style = "visibility: hidden;" href = "password.html"> I can smell the end! </a>
+      <a id = "easteregg" style = "visibility: hidden;" href = "clue.html"> Where does this lead? </a> 
     </div>
     <script>
       document.getElementById("btn").addEventListener("click", submit);
@@ -52,6 +54,19 @@
           setTimeout(redirect, 1000); 
           
           
+        }
+        //What could this be? 
+        else if(document.getElementById("password").value == 'thewrongpassword')
+        {
+          document.getElementById("error2").innerHTML = "Trying to deviate from the path, are you?" 
+          document.getElementById("easteregg").style.visiblity = "visible"; 
+          
+
+
+
+
+
+
         }
         else
         {
