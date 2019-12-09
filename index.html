@@ -32,7 +32,7 @@
       <label id = "error2"> </label>
       <p> <i> Note: No CSS was harmed in the making of this page</i></p>
       <a id = "secret" style = "visibility: hidden;" href = "password.html"> I can smell the end! </a>
-      <a id = "easteregg" style = "visibility: visible;" href = "clue.html"> Where does this lead? </a> 
+      <a id = "easteregg" style = "visibility: hidden;" href = "clue.html"> Where does this lead? </a> 
     </div>
     <script>
       document.getElementById("btn").addEventListener("click", submit);
@@ -60,7 +60,8 @@
         {
           document.getElementById("error2").innerHTML = "Trying to deviate from the path, are you?" 
           document.getElementById("error").innerHTML = "I have a feeling that's WRONG!"
-          document.getElementById("easteregg").style.visibility = "visible"; 
+          document.getElementById("easteregg").style.visibility = "visible"
+          
           
 
 
